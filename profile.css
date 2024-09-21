@@ -40,7 +40,6 @@
   }
   
   button.logout-button {
-    width: 100%;
     padding: 10px;
     background-color: #f00;
     border: none;
@@ -48,8 +47,12 @@
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
-  }
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: auto;
+}
+
   
   button.logout-button:hover {
     background-color: #d00;
@@ -103,4 +106,3 @@ canvas {
   .error-message button:hover {
     background-color: darkred;
   }
-  
