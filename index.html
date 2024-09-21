@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <div id="login">
+                <h1>Log in</h1>
+                <form id="loginForm" action="#">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required />
+
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="password" required />
+                        <img src="eye_icon.png" id="togglePassword" alt="Show/Hide Password" class="eye-icon">
+                    </div>
+
+                    <div id="error-message"></div>
+                    <button id="loginbtn">Log in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./auth.js"></script>
+    <script>
+        // Script for toggling password visibility
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
