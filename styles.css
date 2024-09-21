@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('minimal_bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#container {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+label {
+  color: #fff;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.eye-icon.show {
+  opacity: 0.6;
+}
+
+#error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.error-message button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-message button:hover {
+  background-color: darkred;
+}
